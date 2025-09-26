@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Death Note of Words – Debate Topic Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- these are the Google Fonts used -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <!-- Creepster font: spooky style (used for "Death Note" vibe). -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Oswald font: modern bold font for headings. -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Orbitron font: futuristic/tech look. -->
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="/Images/Inspire_logo.png" alt="Inspire Logo">
+    </div>
+    <div class="nav">Debate</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="hero-title">Death Note of Words</h1>
+    <p class="hero-subtitle">Random Debate Topic Generator</p>
+    <p class="hero-tagline">Where every word can decide your fate... 💀</p>
+    <img src="Images/ryuk.png" alt="Ryuk" class="ryuk-img">
+     <img src="Images/yagami.png" alt="Death Note Poster" class="hero-poster"></img>
+  </section>
+
+  <!-- Randomizer Section -->
+  <section class="randomizer">
+    <button id="generateBtn">Generate Topic</button>
+    <div class="roller" id="roller"> <!-- 👈 added roller here -->
+      Rolling topics will appear...
+    </div>
+    <div class="result-box">
+      <p class="result" id="resultText">Your topic will appear here...</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Inspire 2025 | Conference Hall(annex) | 1:45 PM - 3:15 PM
+  </footer>
+
+  <!-- Overlay -->
+  <div id="overlay">
+    <div class="overlay-content">
+  <h1 id="overlayTopic"></h1>
+
+  <!-- Timer Section -->
+  <div id="timer-container">
+    <div class="timer-input">
+      <input type="text" id="custom-time" placeholder="Enter time (mm:ss)">
+      <button id="start-timer-btn">Start Timer</button>
+      <button id="reset-timer-btn" style="display:none;">Reset</button>
+    </div>
+
+    <div id="debate-timer">00:00</div>
+  </div>
+
+  <audio id="warningSound" src="/sounds/End_sound.mp3" preload="auto"></audio>
+
+  <button id="closeOverlay">Close</button>
+</div>
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+  <audio id="topicSound" src="sounds/page-flip.mp3" preload="auto"></audio>
+
+</body>
+</html>
