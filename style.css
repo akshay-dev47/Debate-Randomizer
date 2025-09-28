@@ -348,3 +348,147 @@ footer {
   width: 100%;
   font-size: 0.9rem;
 }
+/* for mobile devices  */
+/* Media Query for Tablets and Mobiles */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .nav {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .ryuk-img,
+  .hero-poster {
+    max-width: 250px;
+    bottom: 50px;
+  }
+
+  .randomizer {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  #generateBtn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+
+  .roller {
+    font-size: 1rem;
+    height: 50px;
+  }
+
+  .result {
+    font-size: 1.4rem;
+  }
+
+  #timer-container {
+    padding: 20px 25px;
+  }
+
+  #debate-timer {
+    font-size: 3rem;
+    padding: 15px 30px;
+    min-width: 200px;
+  }
+
+  #custom-time {
+    width: 120px;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Media Query for Small Phones */
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .nav {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.9rem;
+  }
+
+  .ryuk-img,
+  .hero-poster {
+    max-width: 180px;
+    position: relative; /* stack instead of absolute */
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 15px auto;
+  }
+
+  .randomizer {
+    padding: 15px;
+  }
+
+  #generateBtn {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  .roller {
+    font-size: 0.9rem;
+    height: 45px;
+  }
+
+  .result {
+    font-size: 1.2rem;
+  }
+
+  #timer-container {
+    padding: 15px 20px;
+  }
+
+  #debate-timer {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    min-width: 160px;
+  }
+
+  #custom-time {
+    width: 100px;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  #overlayTopic {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  #closeOverlay {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+}
